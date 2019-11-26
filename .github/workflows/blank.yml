@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 env:
   NOTTHETERM: 'xterm-256color'
-  COLORTERM: 'yes'
+  NOTTHECOLORTERM: 'yes'
 
 jobs:
   build:
