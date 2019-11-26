@@ -9,8 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: touch
-      run: touch onefile
     - name: run ls
       run: ls -alh
     - name: run ls auto
