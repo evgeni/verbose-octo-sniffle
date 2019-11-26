@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: run env
+      run: env
     - name: run ls
       run: ls -alh
     - name: run ls auto
