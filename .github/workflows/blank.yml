@@ -16,4 +16,4 @@ jobs:
     - name: run ls auto
       run: ls -alh --color=auto
     - name: run ls always
-      run: ls -alh --color=always
+      run: TERM=xterm-256color COLORTERM=yes ls -alh --color=always
