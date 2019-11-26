@@ -3,7 +3,7 @@ name: CI
 on: [push, pull_request]
 
 env:
-  TERM: 'xterm-256color'
+  NOTTHETERM: 'xterm-256color'
   COLORTERM: 'yes'
 
 jobs:
