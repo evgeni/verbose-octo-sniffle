@@ -9,9 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: touch
+      run: touch onefile
     - name: run ls
-      run: ls
+      run: ls -alh
     - name: run ls auto
-      run: ls --color=auto
+      run: ls -alh --color=auto
     - name: run ls always
-      run: ls --color=always
+      run: ls -alh --color=always
