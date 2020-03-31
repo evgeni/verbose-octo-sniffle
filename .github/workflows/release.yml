@@ -18,5 +18,9 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: "3.7"
+      - name: build docs
+        run: mkdir -p docs && echo "docs for $(basename ${GITHUB_REF}) built on $(date -Ru)" > docs/index.html
+      - name: commit docs
+        run: git checkout gh-pages && mv docs $(basename ${GITHUB_REF}) && git add . && git commit -a -m "update docs"
       - name: debug
         run: echo $GITHUB_REF
